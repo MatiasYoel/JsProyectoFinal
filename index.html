@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    <title>Tienda Barberia</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<header>
+    <nav class="navbar navbar-light bg-dark min-vw-100">
+        <a class="logo" href="index.html"><img src="assets/img/barberia.png" alt="Logo Principal"></a>
+        <h2 class="p-3 text-white ">Tienda Barberia</h2>
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal"><i class="bi bi-cart4 mx-5" id="carritoContenedor">0</i></a>
+        </li>
+        </ul>
+    </nav>
+</header>
+<body>
+<main>
+    <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
+    <div id="contenedorProductos"></div>
+    <h3 class="tuCarrito">Tu Carrito</h3>
+    <div id="carrito"></div>
+    <button type="button" class="btn btn-danger productoCarrito" id="vaciarCarrito">Vaciar carrito</button>
+</main>
+<footer class="row footer">
+    <div class="col-12 col-lg-4">
+        <section>
+            <div>
+                <h3 class="bienvenida--subFooter">Tienda Barberia</h3>
+                <a href="index.html"><img src="assets/img/barberiafooter.png" alt="Logo Footer"></a>
+            </div>
+        </section>
+    </div>
+    <div class="row col-12 col-lg-4">
+        <h3 class="bienvenida--subFooter">Horario de Atención</h3>
+        <div class="col-12 col-lg-6">
+            <p>LUNES A VIERNES DE</p>
+            <p>10:00 a 14:00 hrs.</p>
+            <p>15:00 a 19:00 hrs.</p>
+        </div>
+        <div class="col-12 col-lg-6">
+            <p>SÁBADO DE </p>
+            <p>10:00 a 14:00</p>
+            <p>15:00 a 18:00 hrs.</p>
+        </div>
+    </div>
+    <div class="row col-12 col-lg-4">
+        <h3 class="bienvenida--subFooter">Seguinos en Redes</h3>
+        <div class="col-12 col-lg-4">
+        <a href="https://wa.me/message/FEDJWRJNFJBQE1" target="_blank"><img src="assets/img/whatsapp.png"></a>
+        </div>
+        <div class="col-12 col-lg-4">
+            <a href="https://www.instagram.com/somoscaballerosbarberia/" target="_blank"><img src="assets/img/instagram.png"></a>
+        </div>
+        <div class="col-12 col-lg-4">
+            <a href="https://www.facebook.com/Somos-Caballeros-Barberia-2095870277299146" target="_blank"><img src="assets/img/facebook.png"></a>
+        </div>
+    </div>
+    <div>
+        © Tienda Barberia
+    </div>
+</footer>
+<script src="./script.js"></script>
+<script src="./bootstrap.bundle.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
